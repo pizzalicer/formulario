@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+    <header>
+        <nav>
+        </nav>
+      </header>
+      <main class="content">
+        <form method="POST" action="" enctype="multipart/form-data">
+          <fieldset>
+            <legend>Contato</legend>
+            <div>
+              <label for="nome">Nome: </label>
+              <input type="text" name="nome" id="nome" placeholder="José" />
+            </div>
+            <div>
+              <label for="email">E-mail: </label>
+              <input type="text" name="email" id="nome" placeholder="jose@jose.com.br" />
+            </div>
+            <input type="radio" name="genero" value="Masculino" id="Masculino" /><label for="Masculino">Masculino</label>
+            <input type="radio" name="genero" value="Feminino" id="Feminino" /><label for="Feminino">Feminino</label><br/>
+            <label for="Estado">Estado/Cidade</label>
+            <select name="Estados" id="estados" required>
+            <option value="1">MG</option>
+            <option value="2">SP</option>
+            <option value="3">RJ</option>
+            </select>
+            <input type="text" name="cidade" id="cidade" required><br/>
+            <label for="selecione">Selecione um arquivo</label>
+            <input type="file" name="arquivo" id="arquivo" required/><br/>
+            <label for="Sugestao">Sugestão:</label>
